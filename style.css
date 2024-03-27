@@ -1,0 +1,176 @@
+
+* {
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+}
+
+body {
+    color: #C4CBCA;
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+code {
+    font-family: monospace;
+    color: #3CBBB1;
+}
+
+.back {
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: blur(5px);
+}
+
+.header {
+    width: 100vw;
+    height: 10vh;
+    background: #0A0F0D;
+    
+}
+
+.header > ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.header > ul > li > a {
+    text-decoration: none;
+    color: #3CBBB1;
+    font-size: 1.8em;
+    font-weight: 700;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+.header > ul > li > a:hover {
+    color: #EE4266;
+    transition: 0.5s;
+}
+
+section {
+    background: rgb(0,0,0);
+    width: 100vw;
+    height: 90vh;
+}
+
+.section-1 {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6783088235294117) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.title {
+    margin-left: 1em;
+    font-size: 7em;
+    font-weight: bold;
+    line-height: 0.8em;
+}
+
+.title > h1 {
+    color: #EE4266;
+    font-size: 0.9em;
+    line-height: 0.8em;
+}
+
+.title > h2 {
+    line-height: 0.5em;
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 2em;
+}
+
+.section-2 > div {
+    width: 60em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.section-2 > div > h1 {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.section-2 > div > .p1 {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.section-2 > div > .p1 > span {
+    text-align: end;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #EE4266;
+}
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 2em;
+}
+
+.section-3 > div {
+    width: 57em;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+
+.section-3 > div > h1 {
+    font-size: 4em;
+    font-weight: bold;
+    text-align: end;
+}
+
+.section-3 > div > p {
+    font-size: 1.5em;
+    display: flex;
+    text-align: end;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.section-3 > div > span {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2em;
+}
+
+.section-3 > div > span > code {
+    font-size: 1.8em;
+}
+
+.section-3 > div > span > p {
+    font-size: 1.8em;
+    font-weight: 800;
+    color: #EE4266;
+}
+
+.section-3 > div > span > span, mark {
+    font-size: 1.8em;
+}
+
+.section-3 > div > span > span > sub {
+    font-size: 0.7em;
+}

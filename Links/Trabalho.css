@@ -1,0 +1,19 @@
+
+ul {
+    column-count: 2;
+    padding: 10px, 10px, 10px, 10px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: black;
+}
+
+body {
+    background-color: green;
+    height: 400px;
+    width: 600px;
+}

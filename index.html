@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formating</title>
+    <link href="
+    https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
+    " rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        .ml11 {
+        font-weight: 700;
+        font-size: 3.5em;
+        }
+
+        .ml11 .text-wrapper {
+        position: relative;
+        display: inline-block;
+        padding-top: 0.1em;
+        padding-right: 0.05em;
+        padding-bottom: 0.15em;
+        }
+
+        .ml11 .line {
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+        height: 90%;
+        width: 3px;
+        background-color: #C4CBCA;
+        transform-origin: 0 50%;
+        }
+
+        .ml11 .line1 { 
+        top: 0; 
+        left: 0;
+        }
+
+        .ml11 .letter {
+        display: inline-block;
+        line-height: 0.5em;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+<body>
+    <img class="back" src="src/escola.webp" alt="">
+    <header class="header">
+        <ul id="lista">
+        <li>
+            <a href="Links/Bold.html"> Bold</a>
+        </li>
+        <li>
+            <a href="Links/Bold.html">Strong</a>
+        </li>
+        <li>
+            <a href="Links/Italic.html">Italic</a>
+        </li>
+        <li>
+            <a href="Links/Italic.html">Em</a>
+        </li>
+        <li>
+            <a href="Links/Mark.html">Mark</a>
+        </li>
+        <li>
+            <a href="Links/Small.html">Small</a>
+        </li>
+        <li>
+            <a href="Links/Deleted.html">Deleted</a>
+        </li>
+        <li>
+            <a href="Links/Inserted.html">Inserted</a>
+        </li>
+        <li>
+            <a href="Links/Subscript.html">Subscript</a>
+        </li>
+        <li>
+            <a href="Links/Superscript.html">Superscript</a>
+        </li>
+        </ul>
+    </header>
+    <section class="section-1">
+        <span class="title">
+            <h1 class="ml11">
+                <span class="text-wrapper">
+                    <span class="line line1"></span>
+                    <span class="letters">Formatting</span>
+                </span>
+            </h1>
+            <h2>Tags</h2>
+        </span>
+    </section>
+    <section class="section-2">
+        <div>
+            <h1>O que são as tags de <span>formatação?</span></h1>
+            <p class="p1">
+                "As tags de formatação em HTML são elementos utilizados para 
+                controlar a apresentação e o estilo do conteúdo em uma 
+                página da web. Elas permitem que os desenvolvedores especifiquem 
+                como o texto, imagens e outros elementos devem ser exibidos no 
+                navegador do usuário. As tags de formatação são uma parte essencial 
+                da criação de páginas da web bem projetadas e visualmente atraentes." <br>
+                <span>developer.mozilla.org</span>
+            </p>
+        </div>
+    </section>
+    <section class="section-3">
+        <div>
+            <h1>Atributos de Eventos</h1>
+            <p>Os eventos disparados pelas tags HTML podem disparar scripts no JavaScript 
+                da página se eles existirem. Contudo o script de tratamento de evento da tag 
+                HTML não é obrigatório, ou seja, o evento sempre ocorrerá mas se não houver 
+                uma rotina para tratamento deles não irá ocorrer qualquer erro. Definimos 
+                scripts para tratar apenas os eventos que nos interessam.
+            </p>
+            <span>
+                <code>&lt;p onclick="redirecionar()"&gt;Clique aqui!&lt;/p&gt;</code>
+                <span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span>
+                <p onclick="redirect()">Clique aqui!</p>
+            </span>
+            <p>
+                Os eventos no Javascript são disparado pelos elementos do DOM da página corrente. 
+                Portanto o evento está amarrado a tag disparadora do evento.
+            </p>
+        </div>
+    </section>
+    <section class="section-3">
+        <div>
+            <h1>Small</h1>
+            <p>É representado pela tag &lt;small&gt;, sua função e de fazer uma parte do texto ficar pequena, como o exemplo abaixo.</p>
+            <br>
+            <span>
+                <span>
+                    Exemplo
+                </span>
+                <span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span>
+                <small>
+                    Exemplo
+                </small>
+            </span>
+        </div>
+    </section>
+    <section class="section-3">
+        <div>
+            <h1>Mark</h1>
+            <p>É representado pela tag &lt;mark&gt;, ele tem a função de marcar uma parte do texto como especial, como se um marcador tivesse passado por cima.</p>
+            <br>
+            <span>
+                <span>
+                    Exemplo
+                </span>
+                <span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span>
+                <mark>
+                    Exemplo
+                </mark>
+            </span>
+        </div>
+    </section>
+    <section class="section-3">
+        <div>
+            <h1>Subscript</h1>
+            <p>E representado pela tag &lt;sub&gt;, tem a função de deixar um elemento para 
+                fora da linha de baixo, comumente usado em formulas quimicas.
+            </p>
+            <br>
+            <span>
+                <span>
+                    Exemplo 1°
+                </span>
+                <span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span>
+                <span>
+                    Exemplo <sub>1°</sub>
+                </span>
+            </span>
+        </div>
+    </section>
+    <section class="section-3">
+        <div>
+            <h1>Supscript</h1>
+            <p>
+                Representado pela tag &lt;sup&gt;, tem a função de deixar as letras para fora da linha de cima, 
+                comumente usado em contas com numeros elevados.
+            </p>
+            <br>
+            <span>
+                <span>
+                    Exemplo 1°
+                </span>
+                <span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span>
+                <span>
+                    Exemplo <sup>1°</sup>
+                </span>
+            </span>
+        </div>
+    </section>
+    <section class="section-3">
+        <div>
+            <h1>Itálico e Emphase</h1>
+            <p>
+                Os elementos são respectivamente representados pelas tags &lt;i&gt; e &lt;em&gt;, 
+                segundo o W3C, o Italico, serve para indicar um termo tecnico, uma 
+                palavra de uma outra lingua, um pensamento, etc. Já o emphase, ele 
+                define uma emphase, mas funcionalmente, os dois fazem as mesmas coisas, 
+                deixando o texto em itálico.
+            </p>
+            <br>
+            <span>
+                <span>
+                    Exemplo 1°
+                </span>
+                <span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span>
+                <i>
+                    Exemplo
+                </i>
+            </span>
+            <span>
+                <span>
+                    Exemplo 1°
+                </span>
+                <span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span>
+                <em>
+                    Exemplo
+                </em>
+            </span>
+        </div>
+    </section>
+    <section class="section-3">
+        <div>
+            <h1>Deleted</h1>
+            <p>
+                O elemento Deleted e representado pela tag &lt;del&gt;, 
+                servindo para mostrar que aquela parte do texto foi apagada 
+                ou que precisa ser apagada, ele faz isso fazendo um risco na palavra.
+            </p>
+            <br>
+            <span>
+                <span>
+                    Exemplo 1°
+                </span>
+                <span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span>
+                <del>
+                    Exemplo
+                </del>
+            </span>
+        </div>
+    </section>
+    <section class="section-3">
+        <div>
+            <h1>Inserted</h1>
+            <p>
+                O elemento Inserted é representado pela tag &lt;ins&gt;, ele é o oposto do deleted, 
+                mostrando informações que foram inseridas no site, ele faz isso o deixando sublinhado.
+            </p>
+            <br>
+            <span>
+                <span>
+                    Exemplo 1°
+                </span>
+                <span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span>
+                <del>
+                    Exemplo
+                </del>
+            </span>
+        </div>
+    </section>
+    <section class="section-3">
+        <div>
+            <h1>Bold e Strong</h1>
+            <p>
+                Os elementos Bold e Strong, são representados respectivamente 
+                pelas tags &lt;b&gt; e &lt;strong&gt;, segundo o W3C a tag Bold, 
+                serve para deixar a informação em negrito, já a tag Strong, e para 
+                dar enfaze a informação, mas funcionalmente, as duas servem para por 
+                negrito.
+            </p>
+            <br>
+            <span>
+                <span>
+                    Exemplo 1°
+                </span>
+                <span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span>
+                <strong>
+                    Exemplo
+                </strong>
+            </span>
+        </div>
+    </section>
+</body>
+<script src="main.js"></script>
+</html>
