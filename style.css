@@ -186,7 +186,7 @@ section {
     display: flex;
 }
 
-.section-3 > div > span > span, mark {
+.section-3 > div > span > span, mark, del, ins, strong {
     font-size: 1.8em;
 }
 
