@@ -182,10 +182,15 @@ section {
     color: #EE4266;
 }
 
+.section-3 > div > span > span {
+    display: flex;
+}
+
 .section-3 > div > span > span, mark {
     font-size: 1.8em;
 }
 
-.section-3 > div > span > span > sub {
-    font-size: 0.7em;
+.section-3 > div > span > span > sub, sup {
+    font-size: 0.5em;
+    height: 100%;
 }
