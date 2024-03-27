@@ -12,12 +12,22 @@ const scrollPercent = () => {
 }
 
 function redirect() {
-  window.location.replace("https://youtu.be/Op9S9rKENrk?si=UoWp2q0KmbOiTwSQ&t=25")
+  window.location.replace("https://youtu.be/Ou83DD8CkUQ?si=RvDtMsI_EHD6VcC8&t=4")
 }
 
 window.onscroll = () => {
-  console.log(scrollPercent())
+  var change = document.querySelector('#change');
+  change.textContent = Math.round(scrollPercent())
+  console.log()
 };
+
+function keydownFunction() {
+  document.getElementById("demo").style.backgroundColor = "red";
+}
+
+function keyupFunction() {
+  document.getElementById("demo").style.backgroundColor = "green";
+}
 
 anime.timeline({loop: true})
   .add({
